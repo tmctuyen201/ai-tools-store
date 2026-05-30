@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Content Repurposer Tool - AI Tools Store</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;background:#0a0a0f;color:#e0e0e0;line-height:1.6}
+nav{position:fixed;top:0;width:100%;padding:1rem 5%;display:flex;justify-content:space-between;align-items:center;background:rgba(10,10,15,0.95);backdrop-filter:blur(10px);z-index:100;border-bottom:1px solid rgba(255,255,255,0.05)}
+.logo{font-size:1.3rem;font-weight:700;background:linear-gradient(135deg,#a78bfa,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+nav a{color:#9ca3af;text-decoration:none;margin-left:2rem;font-size:.95rem}
+nav a:hover{color:#a78bfa}
+.hero{padding:140px 5% 60px;text-align:center;background:linear-gradient(135deg,#0a0a0f,#0a1628,#1a0a2e)}
+h1{font-size:2.8rem;background:linear-gradient(135deg,#34d399,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:1rem}
+.subtitle{color:#9ca3af;max-width:650px;margin:0 auto;font-size:1.1rem}
+.tool-demo{max-width:800px;margin:40px auto;padding:0 5%}
+.input-area{background:linear-gradient(145deg,#13131f,#1a1a2e);border:1px solid rgba(139,92,246,0.2);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem}
+.input-area label{display:block;color:#a78bfa;font-weight:600;margin-bottom:.5rem;font-size:.9rem}
+textarea{width:100%;height:120px;background:#0d0d14;border:1px solid rgba(139,92,246,0.15);border-radius:8px;color:#e0e0e0;padding:1rem;font-family:inherit;font-size:.95rem;resize:vertical}
+textarea:focus{outline:none;border-color:#8b5cf6}
+select{width:100%;background:#0d0d14;border:1px solid rgba(139,92,246,0.15);border-radius:8px;color:#e0e0e0;padding:.75rem 1rem;font-size:.95rem;margin-top:.5rem}
+select:focus{outline:none;border-color:#8b5cf6}
+.btn{display:inline-block;padding:12px 32px;border-radius:50px;text-decoration:none;font-weight:700;font-size:1rem;transition:all .3s;border:none;cursor:pointer}
+.btn-primary{background:linear-gradient(135deg,#8b5cf6,#6366f1);color:#fff;box-shadow:0 0 20px rgba(139,92,246,0.3);width:100%;margin-top:1rem}
+.btn-primary:hover{box-shadow:0 0 40px rgba(139,92,246,0.5)}
+.output-area{background:linear-gradient(145deg,#13131f,#1a1a2e);border:1px solid rgba(52,211,153,0.2);border-radius:12px;padding:1.5rem;margin-bottom:1.5rem;min-height:100px}
+.output-area .label{color:#34d399;font-weight:600;font-size:.9rem;margin-bottom:.75rem}
+.output-area .content{color:#9ca3af;font-size:.9rem;white-space:pre-wrap}
+.placeholder{text-align:center;color:#4b5563;font-style:italic;padding:2rem}
+.formats{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.5rem}
+.format-tag{background:rgba(52,211,153,0.1);border:1px solid rgba(52,211,153,0.2);color:#34d399;padding:4px 12px;border-radius:20px;font-size:.8rem;cursor:pointer;transition:all .2s}
+.format-tag:hover,.format-tag.active{background:rgba(52,211,153,0.2);border-color:#34d399}
+.features-grid{max-width:900px;margin:60px auto;padding:0 5%;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
+.feature{background:linear-gradient(145deg,#13131f,#1a1a2e);border:1px solid rgba(255,255,255,0.05);border-radius:12px;padding:1.5rem;text-align:center}
+.feature .icon{font-size:2rem;margin-bottom:.75rem}
+.feature h3{color:#a78bfa;margin-bottom:.5rem;font-size:1rem}
+.feature p{color:#6b7280;font-size:.85rem}
+.cta{text-align:center;padding:60px 5%;background:linear-gradient(135deg,#1a0a2e,#0a1628)}
+.cta h2{font-size:2rem;background:linear-gradient(135deg,#34d399,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:1rem}
+.cta p{color:#9ca3af;margin-bottom:2rem}
+footer{text-align:center;padding:40px;background:#08080d;color:#6b7280;font-size:.85rem;border-top:1px solid rgba(255,255,255,0.05)}
+</style>
+</head>
+<body>
+<nav>
+<a href="index.html" class="logo">⚡ AI Tools Store</a>
+<div>
+<a href="index.html">Home</a>
+<a href="../prompts/index.html">Prompts</a>
+<a href="#buy">Buy Now</a>
+</div>
+</nav>
+
+<section class="hero">
+<h1>🔄 Content Repurposer</h1>
+<p class="subtitle">Turn 1 piece of content into 10+ platform-optimized formats in seconds. Save hours every week.</p>
+</section>
+
+<section class="tool-demo">
+<div class="input-area">
+<label>📄 Paste Your Content</label>
+<textarea placeholder="Paste your blog post, article, or any text content here...">AI is transforming how we work. Small businesses can now automate customer support, generate marketing copy, and analyze data without hiring specialists. The key is starting small — pick one repetitive task and automate it first. Within weeks, you'll see measurable time savings and better results.</textarea>
+</div>
+
+<div class="input-area">
+<label>🎯 Output Format</label>
+<div class="formats">
+<span class="format-tag active">Twitter Thread</span>
+<span class="format-tag">LinkedIn Post</span>
+<span class="format-tag">Email Newsletter</span>
+<span class="format-tag">Instagram Caption</span>
+<span class="format-tag">YouTube Script</span>
+<span class="format-tag">TikTok Hook</span>
+<span class="format-tag">Facebook Post</span>
+<span class="format-tag">Reddit Post</span>
+</div>
+<button class="btn btn-primary" onclick="showOutput()">🔄 Repurpose Content</button>
+</div>
+
+<div class="output-area">
+<div class="label">✅ Twitter Thread Output:</div>
+<div class="content" id="output">Click "Repurpose Content" to see the magic ✨</div>
+</div>
+</section>
+
+<section class="features-grid">
+<div class="feature"><div class="icon">⚡</div><h3>Instant Output</h3><p>Get platform-optimized content in under 10 seconds</p></div>
+<div class="feature"><div class="icon">🎯</div><h3>Platform-Specific</h3><p>Each format follows platform best practices & character limits</p></div>
+<div class="feature"><div class="icon">🌍</div><h3>Multi-Language</h3><p>Supports Vietnamese, English, and 20+ languages</p></div>
+<div class="feature"><div class="icon">📊</div><h3>Engagement Hooks</h3><p>Auto-generates hooks optimized for each platform's algorithm</p></div>
+<div class="feature"><div class="icon">🔁</div><h3>Batch Processing</h3><p>Repurpose multiple pieces at once with CSV upload</p></div>
+<div class="feature"><div class="icon">💾</div><h3>Save Templates</h3><p>Customize and save your brand voice for consistent output</p></div>
+</section>
+
+<section class="cta" id="buy">
+<h2>🚀 Get the Content Repurposer</h2>
+<p>Lifetime access. No monthly fees. New platforms added regularly.</p>
+<a href="https://lemonsqueezy.com/placeholder" class="btn btn-primary" style="display:inline-block;width:auto" target="_blank" rel="noopener">Buy Now — $29 →</a>
+</section>
+
+<footer>&copy; 2026 AI Tools Store. All rights reserved.</footer>
+
+<script>
+const outputs={
+"Twitter Thread":"🧵 THREAD: How AI is changing small business\n\n1/ AI is transforming how we work — and it's not just for big companies anymore.\n\nSmall businesses are the biggest winners. Here's why 👇\n\n2/ You can now automate customer support without hiring a team.\n\nAI chatbots handle 80% of routine questions. That's hours back in your week.\n\n3/ Marketing copy? AI generates it in seconds.\n\nProduct descriptions, email campaigns, social posts — all on autopilot.\n\n4/ Data analysis used to require expensive specialists.\n\nNow AI tools give you insights with a single click.\n\n5/ The secret? START SMALL.\n\nPick ONE repetitive task → automate it → measure results → expand.\n\n6/ Within weeks you'll see:\n✅ More time for strategy\n✅ Better customer response times\n✅ Consistent marketing output\n\nStart your AI journey today. Your future self will thank you. 🚀\n\n♻️ RT if this helped. Follow for more AI tips.",
+"LinkedIn Post":"AI isn't replacing small businesses.\n\nIt's empowering them.\n\nHere's what I've seen working with SMBs this year:\n\n→ Customer support automated (80% fewer tickets)\n→ Marketing copy generated in seconds\n→ Data insights without a data team\n\nThe pattern is clear:\n\nCompanies that start small with AI — one task, one workflow — see results within weeks.\n\nThe ones that wait? They're already behind.\n\nMy advice: Pick your most repetitive task this week. Find an AI tool for it. Test it for 30 days.\n\nYou'll wonder why you didn't start sooner.\n\n—\n\nWhat task would you automate first? Drop it in the comments 👇",
+"Email Newsletter":"Subject: The AI advantage small businesses can't ignore anymore\n\nHi [First Name],\n\nQuick question: What's the most repetitive task in your business?\n\nWhatever it is — AI can probably handle it.\n\nI've been diving deep into AI tools for small businesses, and the results are staggering:\n\n• Customer support: AI chatbots now handle 80% of routine queries\n• Content creation: Blog posts, emails, and social media — generated in seconds\n• Data analysis: Insights that used to cost thousands now come free\n\nThe best part? You don't need to be technical.\n\nStart with ONE task. Automate it. See the results.\n\nThen expand.\n\nThat's exactly what our Content Repurposer tool does — turn 1 piece of content into 10+ formats instantly.\n\n→ Check it out here [LINK]\n\nTalk soon,\n[Your Name]\n\nP.S. Reply with the task you'd automate first. I'll send you a personalized AI tool recommendation."
+};
+let selectedFormat="Twitter Thread";
+document.querySelectorAll('.format-tag').forEach(t=>{
+t.onclick=()=>{
+document.querySelectorAll('.format-tag').forEach(x=>x.classList.remove('active'));
+t.classList.add('active');
+selectedFormat=t.textContent;
+document.getElementById('output').textContent='Click "Repurpose Content" to see the magic ✨';
+};
+});
+function showOutput(){
+document.getElementById('output').textContent=outputs[selectedFormat]||'[Demo] Full version generates unlimited outputs across all platforms. Get it now!';
+}
+</script>
+</body>
+</html>
