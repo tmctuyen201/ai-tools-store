@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prompt Pack Preview - AI Tools Store</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;background:#0a0a0f;color:#e0e0e0;line-height:1.6}
+nav{position:fixed;top:0;width:100%;padding:1rem 5%;display:flex;justify-content:space-between;align-items:center;background:rgba(10,10,15,0.95);backdrop-filter:blur(10px);z-index:100;border-bottom:1px solid rgba(255,255,255,0.05)}
+.logo{font-size:1.3rem;font-weight:700;background:linear-gradient(135deg,#a78bfa,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+nav a{color:#9ca3af;text-decoration:none;margin-left:2rem;font-size:.95rem}
+nav a:hover{color:#a78bfa}
+.hero{padding:140px 5% 60px;text-align:center;background:linear-gradient(135deg,#0a0a0f,#1a0a2e,#0a1628)}
+h1{font-size:2.8rem;background:linear-gradient(135deg,#a78bfa,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:1rem}
+.subtitle{color:#9ca3af;max-width:650px;margin:0 auto 2rem;font-size:1.1rem}
+.prompts{max-width:900px;margin:0 auto;padding:40px 5% 80px;display:flex;flex-direction:column;gap:2rem}
+.prompt-card{background:linear-gradient(145deg,#13131f,#1a1a2e);border:1px solid rgba(139,92,246,0.15);border-radius:12px;overflow:hidden;transition:all .3s}
+.prompt-card:hover{border-color:rgba(139,92,246,0.4);box-shadow:0 10px 30px rgba(0,0,0,0.3)}
+.prompt-header{padding:1.2rem 1.5rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,0.05)}
+.prompt-header h3{color:#a78bfa;font-size:1.1rem}
+.tag{background:rgba(139,92,246,0.15);color:#a78bfa;padding:3px 10px;border-radius:12px;font-size:.75rem}
+.prompt-body{padding:1.5rem;font-family:'Courier New',monospace;font-size:.9rem;color:#9ca3af;position:relative}
+.prompt-body .blur{filter:blur(4px);user-select:none}
+.lock-overlay{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;background:rgba(10,10,15,0.7);backdrop-filter:blur(2px)}
+.lock-overlay span{background:linear-gradient(135deg,#8b5cf6,#6366f1);color:#fff;padding:10px 24px;border-radius:8px;font-family:'Segoe UI',sans-serif;font-weight:600;font-size:.9rem}
+.preview-note{text-align:center;color:#6b7280;font-size:.85rem;padding:0 5% 40px;font-style:italic}
+.cta{text-align:center;padding:60px 5%;background:linear-gradient(135deg,#1a0a2e,#0a1628)}
+.cta h2{font-size:2rem;background:linear-gradient(135deg,#34d399,#60a5fa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:1rem}
+.cta p{color:#9ca3af;margin-bottom:2rem}
+.btn{display:inline-block;padding:14px 36px;border-radius:50px;text-decoration:none;font-weight:700;font-size:1.1rem;transition:all .3s}
+.btn-primary{background:linear-gradient(135deg,#8b5cf6,#6366f1);color:#fff;box-shadow:0 0 30px rgba(139,92,246,0.4)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 0 50px rgba(139,92,246,0.6)}
+footer{text-align:center;padding:40px;background:#08080d;color:#6b7280;font-size:.85rem;border-top:1px solid rgba(255,255,255,0.05)}
+.stats{display:flex;justify-content:center;gap:3rem;margin:2rem 0;flex-wrap:wrap}
+.stat{text-align:center}
+.stat .num{font-size:2rem;font-weight:700;color:#a78bfa}
+.stat .label{font-size:.85rem;color:#6b7280}
+</style>
+</head>
+<body>
+<nav>
+<a href="index.html" class="logo">⚡ AI Tools Store</a>
+<div>
+<a href="index.html">Home</a>
+<a href="tools/index.html">Tools</a>
+<a href="#buy">Buy Now</a>
+</div>
+</nav>
+
+<section class="hero">
+<h1>📝 Ultimate Prompt Pack</h1>
+<p class="subtitle">500+ expertly crafted prompts for ChatGPT, Claude & Gemini. Preview a few below — unlock the full collection instantly.</p>
+<div class="stats">
+<div class="stat"><div class="num">500+</div><div class="label">Prompts</div></div>
+<div class="stat"><div class="num">12</div><div class="label">Categories</div></div>
+<div class="stat"><div class="num">50K+</div><div class="label">Users</div></div>
+</div>
+</section>
+
+<p class="preview-note">👀 Below are 6 sample previews. The full pack includes 500+ prompts across 12 categories.</p>
+
+<section class="prompts">
+<div class="prompt-card">
+<div class="prompt-header"><h3>📝 Viral Content Creator</h3><span class="tag">Marketing</span></div>
+<div class="prompt-body">You are a viral content strategist. Create a [platform] post about [topic] that: 1) Opens with a pattern-interrupt hook, 2) Tells a mini-story with emotional tension, 3) Delivers actionable value, 4) Ends with a clear CTA. Tone: [casual/professional]. Length: [short/medium/long].</div>
+</div>
+
+<div class="prompt-card">
+<div class="prompt-header"><h3>📧 Cold Email That Converts</h3><span class="tag">Sales</span></div>
+<div class="prompt-body">Write a cold outreach email for [product/service] targeting [ideal customer persona]. Include: personalized opener referencing their recent work, one clear pain point, a specific result/benefit, and a low-friction CTA. Keep under 120 words. No corporate jargon.</div>
+</div>
+
+<div class="prompt-card">
+<div class="prompt-header"><h3>🔍 SEO Blog Post Generator</h3><span class="tag">Content</span></div>
+<div class="prompt-body">You are an SEO expert. Write a 2000-word blog post targeting the keyword "[keyword]". Include: compelling H1, meta description under 160 chars, H2/H3 structure with LSI keywords, a featured snippet-optimized section, internal linking suggestions, and a CTA. Tone: authoritative yet accessible.</div>
+</div>
+
+<div class="prompt-card">
+<div class="prompt-header"><h3>💡 Product Launch Sequence</h3><span class="tag">Business</span></div>
+<div class="prompt-body"><div class="blur">Create a 7-day product launch email sequence for [product]. Each email: Day 1 - Teaser/curiosity, Day 2 - Problem agitation, Day 3 - Solution reveal, Day 4 - Social proof, Day 5 - Objection handling, Day 6 - Urgency/scarcity, Day 7 - Final call. Include subject lines optimized for open rates.</div><div class="lock-overlay"><span>🔒 Unlock Full Prompt</span></div></div>
+</div>
+
+<div class="prompt-card">
+<div class="prompt-header"><h3>🤖 AI Automation Architect</h3><span class="tag">Automation</span></div>
+<div class="prompt-body"><div class="blur">You are an automation consultant. Analyze my business process: [describe process]. Identify the top 5 tasks that can be automated using AI tools. For each: suggest specific tools, estimated time saved, implementation difficulty (1-5), and step-by-step setup instructions.</div><div class="lock-overlay"><span>🔒 Unlock Full Prompt</span></div></div>
+</div>
+
+<div class="prompt-card">
+<div class="prompt-header"><h3>📊 Market Research Analyst</h3><span class="tag">Strategy</span></div>
+<div class="prompt-body"><div class="blur">Act as a market research analyst. Analyze the [industry/niche] market for [target audience]. Provide: market size estimate, top 5 competitors with SWOT analysis, 3 underserved opportunities, pricing strategy recommendations, and a go-to-market plan with timeline.</div><div class="lock-overlay"><span>🔒 Unlock Full Prompt</span></div></div>
+</div>
+</section>
+
+<section class="cta" id="buy">
+<h2>🔓 Unlock All 500+ Prompts</h2>
+<p>Get instant access to the complete collection. New prompts added monthly.</p>
+<a href="https://lemonsqueezy.com/placeholder" class="btn btn-primary" target="_blank" rel="noopener">Get the Full Pack — $19 →</a>
+</section>
+
+<footer>&copy; 2026 AI Tools Store. All rights reserved.</footer>
+</body>
+</html>
